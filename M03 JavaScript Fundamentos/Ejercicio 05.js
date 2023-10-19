@@ -61,7 +61,9 @@ function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return euro * 1.20;
+   let tasaDECambio = 1.20;
+   let dolares = euro * tasaDECambio;
+   return dolares;
 }
 
 function esVocal(letra) {
@@ -69,6 +71,16 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if(typeof letra === 'string' && letra.length === 1){
+    letra == letra.toLowerCase()  
+   };
+   
+   if(letra  == a || letra == e || letra == i || letro == o || letra == u){
+      return 'Es vocal';
+   } else {
+      return 'Dato incorrecto'
+   }; 
+   
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
